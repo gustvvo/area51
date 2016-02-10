@@ -1,0 +1,46 @@
+
+.cabezera{
+	width: 100%;
+	height: 250px;
+	background-color: red;
+}
+
+.contenido{
+	width: 100%;
+	height: 500px;
+	background-color: blue;
+}
+
+.pie {
+	width: 100%;
+	height: 250px;
+	background-color: green;
+}
+
+
+.fotos {
+	width: 100%;
+	height: 150px;
+	background-color: magenta;
+}
+.biografia {
+	width: 100%;
+	height: 150px;
+	background-color: cyan;
+
+}
+
+
+@media (min-width: 1000px) {
+	.fotos, .biografia {
+		width: 50%;
+	}
+	.fotos{
+		float: left;
+		background-color: yellow;
+	}
+	.biografia{
+		float: right;
+		background-color: BDB9D7;
+	}
+}

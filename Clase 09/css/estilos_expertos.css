@@ -1,0 +1,131 @@
+.cuerpo h1.titulo {
+	font-family: Arial;
+	font-size: 26px;
+	font-weight: normal;
+	color: #545454;
+	margin-top:50px;
+	margin-bottom:0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	/*
+		text-transform: lowercase;
+		text-transform: capitalize;
+	*/
+}
+
+.cuerpo h2.titulo {
+	font-family: Arial;
+	font-size: 26px;
+	color: #fff;  /* #ff55bb = #f5b  */	
+	font-weight: normal;
+	background-color:#376b3d;
+	text-transform: uppercase;
+	text-align: center;
+	width:244px;
+	height: 34px;
+	margin:0 auto;  /* margin: 0 auto 0 auto;  */
+	padding-top:8px;
+}
+
+.cuerpo .contenidoVideo {
+	width:98%;
+	max-width: 560px;
+	margin:46px auto 0 auto;
+}
+
+.cuerpo .contenidoVideo .video {
+	width:100%;
+}
+
+.cuerpo .contenidoVideo h2 {
+	margin:32px auto 0 auto;
+	/*margin-top: 32px;*/
+	width:98%;
+	font-family: Arial;
+	font-size: 16px;
+	color:#545454;
+	text-align: justify;
+	font-weight: normal;
+}
+
+.cuerpo .contenidoVideo h2 span {
+	font-weight: bold;
+}
+
+.cuerpo .contenidoVideo.margenInferiorCero {
+	margin-bottom: 50px
+}
+
+@media (min-width:650px) {
+	.cuerpo .contenidoVideo {
+		width:46%;
+		float: left;
+		margin-left: 2%;
+		margin-right:2%;
+	}
+}
+
+
+
+/* Versión Tablet  */
+@media (min-width:800px) {
+	.logoChico {
+		width:40%;
+		float:right;
+		text-align: right;
+		margin-right:1%;
+	}
+
+	.textoDerechos{
+		width:50%;
+		float:left;
+		text-align: left;
+		margin-left:1%;
+	}
+
+}
+
+@media (min-width:836px) {
+	.zonaMenu,
+	.menu {
+		display: none;
+	}
+
+	nav {
+		display: block;
+	}
+}
+
+
+/* Versión Desktop */
+@media (min-width:1160px) {
+	.contenedor {
+		width:1160px;
+	}
+
+	.logo {
+		margin-left:0;
+	}
+
+	.menu {
+		margin-right:0;
+	}
+
+	.logoChico {
+		margin-right: 0;
+	}
+
+	.textoDerechos {
+		margin-left:0;
+	}
+
+	nav ul li {
+		width:16.666666667%;
+		height:95px;
+	}
+
+	nav ul li a {
+		height: 80px;
+	}
+}

@@ -1,0 +1,203 @@
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Times New Roman';
+}
+
+.fa {
+	color: #fff;
+}
+
+header {
+	width:100%;
+	height: 36px;
+	background-color: #090909; 
+}
+
+	header nav {
+		width:100%;
+		text-align: center;
+		position: relative;
+	}
+
+		header nav img {
+			position: absolute;
+			left:10px;	
+			z-index:1;
+		}
+
+		header nav ul {
+			position: relative;
+			display: none;
+			margin:0 auto;
+			padding:0;
+			list-style:none;
+			width:300px;
+			background-image: url(../img/fondo-menu.jpg);
+			z-index:10;			
+		}
+
+			header nav ul li {
+				width:100%;
+				height:40px;
+				border-bottom: 1px solid #fff;
+			}
+
+				header nav ul li a {
+					font-size:20px;
+					color:#fff;
+					display: block;
+					width:100%;
+					height: 30px;
+					padding-top:10px;
+				}
+
+				header nav ul li a:link,
+				header nav ul li a:visited,
+				header nav ul li a:active {
+					text-decoration: none;
+				}
+
+				header nav ul li a:hover {
+					text-decoration: underline;
+					background-color: #908A8A;
+				}
+
+		header nav i {
+			margin-bottom:4px;
+		}
+
+section.frase {
+    font-size: 24px;
+    margin-left: 118px;
+    margin-top:20px;
+}
+
+section.banner {
+	background-image: url(../img/banner.jpg);
+	background-position: center top;
+	width:100%;
+	height: 278px;
+}
+
+article.autor {
+	width:100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom:24px;
+}
+	
+	article.autor div.foto {
+		width:180px;
+		height: 189px;
+		margin:10px auto 0 auto;
+	}
+
+	article.autor h1 {
+		margin:0;
+		padding:0;
+		font-size:26px;
+		text-align: center;
+	}
+
+	article.autor span {
+		font-size:18px;
+		font-weight: normal;
+		text-align: center;
+	}	
+
+	article.descripcion {
+		width:100%;
+		border-bottom: 1px solid #ccc;
+		padding-bottom:24px;
+	}
+
+		article.descripcion div.intro {
+			width:96%;
+			margin:0 auto;
+		}
+
+			article.descripcion div.intro h2 {
+				font-size:24px;
+			}
+
+			article.descripcion div.intro span {
+				font-size:14px;
+				text-align: justify;
+				display: block;
+			}
+
+		article.descripcion div.ultimosProyectos {
+			width:96%;
+			margin:0 auto;
+		}
+
+			article.descripcion div.ultimosProyectos div.proyecto {
+				width:156px;
+				margin:0 auto 10px auto;
+			}
+
+				article.descripcion div.ultimosProyectos div.proyecto h2 {
+					margin:0;
+					padding: 0;
+					font-size: 15px;
+					color:#5b5b5b;
+					font-weight: normal;
+					text-align: center;
+				}
+
+footer {
+	font-size: 14px;
+	color:#5b5b5b;
+	text-align: center;
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+
+/*Versión tableta*/
+@media (min-width:550px) {
+	article.autor {
+		height: 50px;
+	}
+
+	article.autor div.foto {
+		float:left;
+		position: relative;
+		margin-top:-131px;
+		left:10px;
+	}
+
+	article.autor h1 {
+		float:left;
+		margin-left:30px;
+		text-align: left;
+	}
+
+	article.descripcion div.ultimosProyectos div.proyecto {
+		float:left;
+		margin-right:20px;
+	}
+
+	article.descripcion div.ultimosProyectos {
+		height: 180px;
+	}
+}
+
+/*Versión desktop */
+@media (min-width:1078px) {
+
+	article.descripcion div.intro {
+		width:46%;
+		padding-left:2%;
+		padding-right:2%;
+		float: left;
+	}
+
+	article.descripcion div.ultimosProyectos {
+		width:50%;
+		float:left;
+	}
+
+	article.descripcion {
+		height: 200px;
+	}
+}

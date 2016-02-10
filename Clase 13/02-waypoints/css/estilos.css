@@ -1,0 +1,34 @@
+body {
+	margin:0;
+	padding:0;
+}
+
+article, section, div, footer {
+	width: 100%;
+	height: 400px;
+}
+
+article {
+	background: red;
+}
+
+section {
+	background: green;
+}
+
+div {
+	background: blue;
+}
+
+footer {
+	background: yellow;
+}
+
+aside {
+	width:150px;
+	height: 200px;
+	position:fixed;
+	left: 0px;
+	background: cyan;
+	transition: 1s all;
+}
